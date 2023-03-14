@@ -7,7 +7,7 @@ The following challenge involved creating the backend routes, models, and contro
 -	See all or one user
 -	Create a user
 -	Update a user
--	Delete a user
+-	Delete a user & associated thoughts
 -	Add a friend
 -	Delete a friend
 -	See all or one thought
