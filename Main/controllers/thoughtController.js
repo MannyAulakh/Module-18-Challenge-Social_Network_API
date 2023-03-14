@@ -37,7 +37,7 @@ module.exports = {
       });
     })
   },
-
+  //Update Thought
   updateThought(req, res) {
     Thought.findOneAndUpdate(
       { _id: req.params.thoughtId },
@@ -52,7 +52,7 @@ module.exports = {
       )
       .catch((err) => res.status(500).json(err));
   },
-
+ // Delete Thought
   deleteThought(req, res) {
     Thought.findOneAndRemove({ _id: req.params.thoughtId })
       .then((thought) =>
@@ -65,7 +65,7 @@ module.exports = {
         res.status(500).json(err);
       });
   },
-
+  // Create Reaction
   createReaction(req, res) {
     Thought.findOneAndUpdate(
       { _id: req.params.thoughtId },
@@ -82,7 +82,7 @@ module.exports = {
       )
       .catch((err) => res.status(500).json(err));
   },
-
+  //Delete Reaction
   deleteReaction(req, res) {
     Thought.findOneAndUpdate(
       { _id: req.params.thoughtId },
